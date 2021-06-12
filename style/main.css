@@ -378,6 +378,101 @@ body {
 }
 
 .services {
+  background: #FFF5EC url("../images/Vector.png");
   padding: 100px 0;
+  background-repeat: no-repeat;
+  background-position-y: 20rem;
+}
+
+.services-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.services-info .section-title {
+  -ms-flex-preferred-size: 40%;
+      flex-basis: 40%;
+  padding-left: 24px;
+  border-left: 18px solid #35CD8C;
+}
+
+.services-info .section-prg {
+  -ms-flex-preferred-size: 60%;
+      flex-basis: 60%;
+}
+
+.services .container > .row {
+  gap: 60px;
+  padding: 200px 0;
+}
+
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.col-60 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.col-60 .right-arrow {
+  position: relative;
+  right: 20px;
+}
+
+.col-60 .left-arrow {
+  position: relative;
+  right: -20px;
+}
+
+.col-40 {
+  -ms-flex-preferred-size: 50%;
+      flex-basis: 50%;
+}
+
+.col-40 svg {
+  width: 100%;
+}
+
+.col svg {
+  width: 100%;
+}
+
+.meals {
+  padding: 0 0 100px;
+  background: #FFF5EC;
+}
+
+.meals .section-title, .meals .section-prg {
+  text-align: center;
+  width: 50%;
+  margin: auto;
+}
+
+.meals .section-prg {
+  padding: 30px 0 60px;
+}
+
+.meals .row {
+  gap: 60px 30px;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.meals .row .meal {
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
 }
 /*# sourceMappingURL=main.css.map */

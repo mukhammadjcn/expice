@@ -124,8 +124,70 @@ body{
 
 // Services
 .services{
+    background: #FFF5EC url('../images/Vector.png');
     padding: 100px 0;
+    background-repeat: no-repeat;
+    background-position-y: 20rem;
     &-info{
-        
+        display: flex;
+        align-items: center;
+        .section-title{
+            flex-basis: 40%;
+            padding-left: 24px;
+            border-left: 18px solid #35CD8C;
+        }
+        .section-prg{
+            flex-basis: 60%;
+        }
+    }
+    .container > .row{
+        gap: 60px;
+        padding: 200px 0;
+    }
+}
+.row{
+    display: flex;
+    align-items: center;
+}
+.col-60{
+    flex-basis: 50%;
+    .right-arrow{
+        position: relative;
+        right: 20px;
+    }
+    .left-arrow{
+        position: relative;
+        right: -20px;
+    }
+}
+.col-40{
+    flex-basis: 50%;
+    svg{
+        width: 100%;
+    }
+}
+.col svg{
+    width: 100%;
+}
+
+// Meal menu
+.meals{
+    padding:0 0 100px;
+    background: $whiter;
+    .section-title, .section-prg{
+        text-align: center;
+        width: 50%;
+        margin: auto;
+    }
+    .section-prg{
+        padding: 30px 0 60px;
+    }
+    .row{
+        gap: 60px 30px;
+        flex-wrap: wrap;
+        justify-content: center;
+        .meal{
+            flex-basis: 30%;
+        }
     }
 }
