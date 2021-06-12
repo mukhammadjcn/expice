@@ -1,0 +1,158 @@
+@import './variable';
+
+// Header
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .navbar{
+        display: flex;
+        gap: 40px;
+        .nav-link{
+            font-size: 16px;
+            line-height: 24px;
+            text-align: center;
+            color: $blue;
+        }
+    }
+    .user{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        &-image{
+            width: 52px;
+            height: 52px;
+            img{
+                width: 100%;
+                border-radius: 50%;
+            }
+        }
+        &-name{
+            font-size: 16px;
+            line-height: 24px;
+            color: #FFFFFF;
+        }
+    }
+}
+
+// Search form
+.search-form{
+    background: white;
+    display: inline-flex;
+    border: 8px solid #ffffff;
+    input{
+        padding: 28px 20px 28px 40px;
+        font-size: 20px;
+        border: none;
+        outline: none;
+        &::placeholder{
+            font-family: 'Poppins', sans-serif;
+            font-size: 18px;
+            line-height: 90px;
+            text-transform: capitalize;
+            color: $blue;
+            opacity: 0.6;
+        }
+    }
+    button{
+        font-family: 'Poppins', sans-serif;
+        padding: 20px 76px;
+        border: none;
+        border-radius: 74px 0 0 0;
+        background-color: $lighGreen;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+}
+
+// Food
+.food{
+    position: relative;
+    width: 40%;
+    img{
+        width: 100%;
+    }
+    .food-information{
+        position: absolute;
+        bottom: 3px;
+        height: 40%;
+        width: 100%;
+        background-color: $lightGreenOpacity;
+        border-radius: 16px;
+        padding: 30px 50px;
+        color: #FFFFFF;
+        .food-title{
+            opacity: 1;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 24px;
+        }
+        .food-label{
+            padding: 20px 0;
+            font-size: 14px;
+            line-height: 24px;
+            letter-spacing: 0.4px;
+        }
+        .food-location{
+            position: relative;
+            svg{
+                vertical-align: middle;
+                margin-right: 10px;
+            }
+            .food-add{
+                padding: 16px 64px;
+                background-color: #FFFFFF;
+                color: #35CD8C;
+                position: absolute;
+                right: -50px;
+                bottom: -10px;
+                border-radius: 50px 0 0 50px;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}
+
+// Meal
+.meal{
+    display: inline-block;
+    .meal-img{
+        width: 100%;
+    }
+    .meal-information{
+        padding: 30px;
+        border-radius: 0 0 20px 20px;
+        background-color: #FFFFFF;
+        div{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        .meal-title{
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 32px;
+            text-transform: capitalize;
+            color: $blue;
+        }
+        .meal-price{
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 32px;
+            text-transform: capitalize;
+            color: $lighGreen;
+        }
+        .meal-label{
+            font-size: 14px;
+            line-height: 24px;
+            text-transform: capitalize;
+            color: #707070;
+            padding-top: 20px;
+            width: 70%;
+        }
+    }
+}

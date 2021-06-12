@@ -1,0 +1,131 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration-line: none;
+    list-style-type: none;
+}
+@import './components';
+@import './variable';
+
+// Initials
+body{
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    max-width: 1280px;
+    margin: auto;
+}
+.section-title{
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 62px;
+    text-transform: capitalize;
+    color: $blue;
+}
+.section-prg{
+    font-size: 14px;
+    line-height: 24px;
+    text-transform: capitalize;
+    color: $grey;
+}
+
+
+
+//Main
+.main{
+    background: url('../images/bg-web.png');
+    background-position: center;
+    .intro{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        padding-bottom: 80px;
+        .intro-img{
+            flex-basis: 50%;
+
+        }
+        .intro-text{
+            flex-basis: 50%;
+            &__title{
+                font-weight: 900;
+                font-size: 200px;
+                line-height: 158px;
+                text-transform: capitalize;
+                color: $blue;
+                opacity: 0.05;
+                padding-top: 80px;
+            }
+            &__label{
+                font-size: 58px;
+                line-height: 60px;
+                text-transform: capitalize;
+                color: $blue;
+            }
+            .search-form{
+                margin: 40px 0;
+            }
+        }
+        .intro-img{
+            position: relative;
+            background-image: url('../images/Make\ Vector\ BG.png');
+            background-position: bottom left;
+            background-repeat: no-repeat;
+            &__main{
+                width: 100%;
+            }
+            &__carusel{
+                display: flex;
+                gap: 20px;
+                justify-content: flex-end;
+                button{
+                    background: none;
+                    border: none;
+                    outline: none;
+                }
+            }
+            
+        }
+    }
+}
+
+// Restaurants
+.res-menu{
+    padding: 60px 0;
+    background-color: $whiter;
+    &__info{
+        display: flex;
+        justify-content: space-between;
+        gap: 60px;
+        .section-title, .section-prg{
+            flex-basis: 50%;
+        }
+        .section-title{
+            padding-left: 24px;
+            border-left: 18px solid #35CD8C;
+            font-size: 44px;
+        }
+    }
+    &__box{
+        background: url('../images/Make\ Vector\ BG.png');
+        background-position: top left;
+        background-position-y: 30px;
+        background-repeat: no-repeat;
+        padding: 100px 0;
+        display: flex;
+        align-items: center;
+        gap: 40px;
+        .food{
+            flex-basis: 40%;
+        }
+    }
+}
+
+// Services
+.services{
+    padding: 100px 0;
+    &-info{
+        
+    }
+}
