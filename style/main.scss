@@ -169,6 +169,9 @@ body{
 .col svg{
     width: 100%;
 }
+.col-50{
+    flex-basis: 50%;
+}
 
 // Meal menu
 .meals{
@@ -188,6 +191,45 @@ body{
         justify-content: center;
         .meal{
             flex-basis: 30%;
+        }
+    }
+}
+
+//Apps
+.apps{
+    // background: $whiter;
+    position: relative;
+    padding: 60px;
+    .ot{
+        position: absolute;
+        left: 0;
+        bottom: 0;
+        z-index: -2;
+        width: 40%;
+        opacity: 0.4;
+    }
+    .section-title{
+        padding-left: 24px;
+        border-left: 18px solid #35CD8C;
+    }
+    .section-prg{
+        padding: 30px 0;
+    }
+    .col-50 > .row{
+        gap: 20px;
+    }
+    .iphone{
+        position: relative;
+        width: 70%;
+        margin: auto;
+        img{
+            width: 100%;
+        }
+        .kkat{
+            position: absolute;
+            left: -160px;
+            bottom: 36px;
+            z-index: -1;
         }
     }
 }
