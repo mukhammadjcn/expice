@@ -36,6 +36,7 @@ body{
 .main{
     background: url('../images/bg-web.png');
     background-position: center;
+    background-repeat: no-repeat;
     .intro{
         display: flex;
         align-items: center;
@@ -87,6 +88,9 @@ body{
             }
             
         }
+    }
+    .burger-menu, .cancel-btn{
+        display: none;
     }
 }
 
@@ -231,5 +235,145 @@ body{
             bottom: 36px;
             z-index: -1;
         }
+    }
+}
+
+
+
+
+// Media
+@media screen and (max-width:1279px) {
+    .container {
+        max-width: 980px
+    }
+    .main{
+        background: url('../images/BG\ \(1\).png');
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .header{
+        .navbar{
+            background-color: $whiter;
+            padding: 200px 0;
+            flex-direction: column;
+            position: absolute;
+            min-width: 100vw;
+            left: -5000px;
+            top: 0;
+            min-height: 100vh;
+            gap: 60px;
+            z-index: 10;
+            transition: 0.8s ease-in-out;
+            .nav-link{
+                font-size: 36px;
+                line-height: 40px;
+                color: $green;
+                
+            }
+            .cancel-btn{
+                display: inline-block;
+                position: absolute;
+                top: 36px;
+                font-size: 36px;
+                right: 36px;
+                color: $green;
+            }
+        }
+        .burger-menu{
+            display: block;
+        }
+        .user{
+            display: none;
+        }
+    }
+    .intro-img__carusel{
+        position: relative;
+        bottom: -80px;
+    }
+    .main .intro .intro-text__title{
+        font-size: 150px;
+    }
+    .main .intro .intro-text__label{
+        font-size: 60px;
+    }
+    .food .food-information{
+        height: 55%;
+    }
+    .meals .row .meal{
+        flex-basis: 46%;
+    }
+    .meal .meal-information .meal-label{
+        width: auto;
+    }
+    .apps .iphone .kkat{
+        left: -130px;
+    }
+}
+@media screen and (max-width:979px) {
+    .container {
+        max-width: 90%
+    }
+}
+@media screen and (max-width:752px){
+    .main{
+        background: url('../images/BG\ \(2\).png');
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .main .intro{
+        flex-direction: column;
+    }
+    .main .intro .intro-text__title{
+        font-size: 100px;
+        line-height: 100px
+    }
+    .main .intro .intro-text__label{
+        font-size: 36px;
+        line-height: 48px;
+    }
+    .header .logo svg{
+        width: 60%;
+    }
+    .intro-img__carusel{
+        position: initial;
+        gap: 10px;
+    }
+    .section-title{
+        font-size: 36px;
+        line-height: 48px
+    }
+    .section-prg{
+        font-size: 14px;
+        line-height: 24px;
+    }
+    .res-menu__info, .res-menu__box, .services-info, .services .container > .row{
+        flex-direction: column;
+    }
+    .food{
+        width: 70%;
+    }
+    .services-info{
+        gap: 20px; 
+        align-items: initial;
+    }
+    .services .container > .row{
+        padding: 30px 0;
+    }
+    .col-40{
+        width: 100%;
+    }
+    .services{
+        padding: 0;
+    }
+    .meals .section-title, .meals .section-prg{
+        width: 100%;
+    }
+    .meals .row .meal{
+        flex-basis: 90%;
+    }
+    .apps .row{
+        flex-direction: column-reverse;
     }
 }
