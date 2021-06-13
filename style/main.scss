@@ -257,7 +257,7 @@ body{
             background-color: $whiter;
             padding: 200px 0;
             flex-direction: column;
-            position: absolute;
+            position: fixed;
             min-width: 100vw;
             left: -5000px;
             top: 0;
