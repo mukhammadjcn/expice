@@ -547,7 +547,7 @@ body {
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    position: fixed;
+    position: fixed !important;
     min-width: 100vw;
     left: -5000px;
     top: 0;
